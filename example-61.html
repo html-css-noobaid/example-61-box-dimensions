@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Box Dimensions</title>
+		
+		<style type="text/css">
+			body {
+				background-color: SlateGray;
+				color: White;
+				font-family: "Courier New", Courier, monospace;
+			}
+			
+			.ex1 {
+				width: 200px;
+				height: 200px;
+				min-width: 200px;
+				max-width: 250px;
+				min-height: 200px;
+				max-height: 250px;
+				background-color: Salmon;
+				overflow: scroll;
+				display: inline-block;
+			}
+
+			#left {
+				margin-left: 30px;
+				overflow: hidden;
+			}
+
+			#bottom {
+				margin-top: 70px;
+				display: block;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h1>CSS Box Tutorial</h1>
+		
+		<h2>Example #1: Box Dimensions</h2>
+		
+		<p class="ex1"> CSS has properties that allows you to set
+			the height and width of boxes, as well as 
+			the minimum/maximum height and width. We 
+			use the overflow property to decide whether
+			we want a scrollbar or we want to cut off
+			text that does not fit in the box.</p>
+
+		<p class="ex1" id="left">The display property 
+			allows us to decide if we want our box
+			to act like a block element where each box
+			starts on a new line or an inline element
+			where we can have several boxes on the same 
+			line.</p>
+
+		<p class="ex1" id="bottom">The margin properties 
+			(margin-top, margin-right, margin-bottom, 
+			margin-left) allow us to control the gaps
+			between boxes. </p>
+		
+	</body>
+</html>
